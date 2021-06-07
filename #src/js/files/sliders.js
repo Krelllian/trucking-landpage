@@ -77,7 +77,7 @@ let slider_about = new Swiper('.about__slider', {
 	speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -87,8 +87,8 @@ let slider_about = new Swiper('.about__slider', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.about__swiper-button-next',
+		prevEl: '.about__swiper-button-prev',
 	},
 	/*
 	breakpoints: {

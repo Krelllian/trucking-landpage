@@ -16,10 +16,13 @@
     // .hero__content
 
     &__content {
-        max-width: 920px;
+        max-width: 86%;
         padding: 45px 70px;
         border: 1px solid gold;
         text-align: center;
+        @media (max-width:$md4+px){
+             padding: 25px;
+        }
     }
 
     // .hero__title
@@ -31,6 +34,14 @@
         line-height: 75px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        @media (max-width:$md3+px){
+             font-size: 36px;
+             margin-bottom: 15px;
+             line-height: 50px;
+        }
+        @media (max-width:$md4+px){
+            font-size: 32px;
+        }
     }
 
     // .hero__descr
@@ -44,3 +55,93 @@
 
 
 //========================================================================================================================================================
+
+.about {
+
+    background-image: linear-gradient(to right, #393F47 0%, #393F47 40% #8293a7 40%, #2f343a 40%, #2f343a 60%, #393F47 60%);
+
+    // .about__container
+
+    &__container {
+        position: relative;
+
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 6px;
+            background-color: #C8A35F;
+        }
+    }
+
+    // .about__slider
+
+    &__slider {
+        position: relative;
+    }
+
+    // .about__swiper-slide
+
+    &__swiper-slide {
+        display: flex;
+        min-height: 560px;
+    }
+
+    // .about__title
+
+    &__title {
+        margin-top: 166px;
+        margin-bottom: 30px;
+        max-width: 445px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__descr {
+        margin-bottom: 50px;
+        max-width: 410px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+        // .about__btn
+    &__btn {
+    }
+
+    // .about__swiper-button-prev
+
+    &__swiper-button-prev {
+        position: absolute;
+        top: 156px;
+        right: 0;
+
+    }
+
+    // .about__swiper-button-next
+
+    &__swiper-button-next {
+
+    }
+}
+
+.slide {
+
+    // .slide__left
+
+    &__left {
+    }
+
+    // .slide__img
+
+    &__img {
+    }
+}
+
+.btn {
+}

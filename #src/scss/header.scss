@@ -5,6 +5,7 @@
     position: fixed;
     width: 100%;
     background-color: #2f343a;
+	z-index: 20;
     // .header__container
 
     &__container {
@@ -41,6 +42,16 @@
 		white-space: nowrap;
         background: no-repeat left url('../img/offices-decor.svg');
 
+		@media (max-width:$md4+px){
+			margin-top: 40px;
+			font-size: 40px;
+			white-space: initial;
+			background: none;
+			margin-left: 0;
+			padding-left: 0;
+			text-align: center;
+		}
+
         &::before {
             content: "";
             position: absolute;
@@ -50,7 +61,17 @@
             height: 46px;
             background-color: #f2f2f2;
             transform: translateY(-50%);
+			@media (max-width:$md4+px){
+				 display: none;
+			}
         }
+
+		a {
+			color: #fff;
+			&:hover {
+				color: gold;
+			}
+		}
     }
 
     // .header__menu
@@ -74,10 +95,10 @@
 			position: fixed;
 			top: 0;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.8;
 			width: 100vw;
 			height: 100vh;
-			background-color: rgb(40, 51, 158);
+			background-color: rgb(0, 0, 0);
 	   }
 
 	   &._active {
@@ -90,10 +111,19 @@
     &__list {
         display: flex;
 
+		li {
+			@media (max-width:$md3+px){
+					font-size: 40px;
+					line-height: 70px;
+			}
+		}
         li:not(:last-child) {
             margin-right: 30px;
 			@media (max-width:$md2+px){
 				margin-right: 10px;
+			}
+			@media (max-width:$md3+px){
+				margin-right: 0;
 			}
         }
         a {
@@ -103,11 +133,20 @@
             text-transform: uppercase;
             color: #FFFFFF;
         }
+
+		@media (max-width:$md3+px){
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		}
     }
 
     // .menu__link
 
     &__link {
+		&:hover {
+			color: gold;
+		}
     }
 }
 
