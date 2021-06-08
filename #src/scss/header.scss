@@ -68,6 +68,7 @@
 
 		a {
 			color: #fff;
+			transition: all 0.3s ease 0s;
 			&:hover {
 				color: gold;
 			}
@@ -144,6 +145,7 @@
     // .menu__link
 
     &__link {
+		transition: all 0.3s ease 0s;
 		&:hover {
 			color: gold;
 		}

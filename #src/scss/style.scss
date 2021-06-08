@@ -86,4 +86,20 @@ body {
 }
 //===================================================================================================================================
 
+.btn {
+	display: flex;
+	padding: 18px 48px;
+	background-color: #C8A35F;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		filter: contrast(120%);
+	}
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
