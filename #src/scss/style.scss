@@ -84,8 +84,23 @@ body {
 .page {
 	flex: 1 1 auto;
 }
+
+
 //===================================================================================================================================
 
+img {
+	max-width: 100%;
+}
+
+.top-decor {
+	&:before {
+		content: "";
+		position: absolute;
+		width: 90px;
+		height: 6px;
+		background-color: #C8A35F;
+	}
+}
 .btn {
 	display: flex;
 	padding: 18px 48px;
