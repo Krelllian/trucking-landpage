@@ -113,6 +113,7 @@
         display: flex;
 
 		li {
+
 			@media (max-width:$md3+px){
 					font-size: 40px;
 					line-height: 70px;
@@ -133,6 +134,9 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: #FFFFFF;
+			&._active {
+				color: gold;
+			}
         }
 
 		@media (max-width:$md3+px){

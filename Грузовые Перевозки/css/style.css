@@ -97,7 +97,6 @@ body {
   color: #fff;
   background-color: #2f343a;
   font-size: 14px;
-  height: 10000px;
 }
 
 body._lock {
@@ -950,6 +949,10 @@ body.ie ._ibg img {
   color: #FFFFFF;
 }
 
+.menu__list a._active {
+  color: gold;
+}
+
 .menu__link {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1009,6 +1012,56 @@ body.ie ._ibg img {
 	}
 }
 */
+
+.footer {
+  background-color: #c8a35f;
+}
+
+.footer__container {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo img {
+  width: 160px;
+  height: 45px;
+}
+
+.footer__column-2 {
+  margin-right: 50px;
+}
+
+.footer__address {
+  margin-bottom: 10px;
+  line-height: 16px;
+  color: #F2F2F2;
+}
+
+.footer__mail {
+  line-height: 16px;
+  color: #2F343A;
+}
+
+.footer__tel {
+  display: block;
+  line-height: 16px;
+  color: #F2F2F2;
+}
+
+.footer__tel:not(:last-child) {
+  margin-bottom: 10px;
+}
 
 ._no-webp .hero{
   background: no-repeat 85% center/cover url("../img/hero__bg.jpg"); }
@@ -1194,6 +1247,7 @@ body.ie ._ibg img {
 .grid__item {
   background-color: #393f47;
   min-height: 180px;
+  color: #fff;
 }
 
 .item-grid {
@@ -1340,6 +1394,10 @@ body.ie ._ibg img {
   line-height: 14px;
 }
 
+.map {
+  background-color: #393f47;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1394,6 +1452,13 @@ img {
 
   .checkbox a:hover {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1140px) {
+  .map__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1545,6 +1610,14 @@ img {
     bottom: calc(50% - 1px);
   }
 
+  .footer__column-1 {
+    margin-top: 35px;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
   .hero__title {
     font-size: 36px;
     margin-bottom: 15px;
@@ -1596,6 +1669,19 @@ img {
 
   .header__offices::before {
     display: none;
+  }
+
+  .footer__logo img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .footer__column-2 {
+    margin-right: 0;
+  }
+
+  .footer__address {
+    font-size: 12px;
   }
 
   .hero__content {

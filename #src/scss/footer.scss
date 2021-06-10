@@ -1,5 +1,77 @@
-footer{}
-//====================================================================================================
 
 //====================================================================================================
 
+//====================================================================================================
+
+
+.footer {
+    background-color: #c8a35f;
+    // .footer__container
+
+    &__container {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        img {
+            width: 160px;
+            height: 45px;
+            @media (max-width:$md4+px){
+                 width: 80%;
+                 height: 80%;
+            }
+        }
+    }
+
+    // .footer__column
+
+    &__column-1 {
+        @media (max-width:$md3+px){
+            margin-top: 35px;
+             width: 100%;
+             order: 3;
+        }
+    }
+
+    &__column-2 {
+        margin-right: 50px;
+        @media (max-width:$md4+px){
+             margin-right: 0;
+        }
+    }
+
+    // .footer__address
+
+    &__address {
+        margin-bottom: 10px;
+        line-height: 16px;
+        color: #F2F2F2;
+        @media (max-width:$md4+px){
+             font-size: 12px;
+        }
+    }
+
+    // .footer__mail
+
+    &__mail {
+        line-height: 16px;
+        color: #2F343A;
+    }
+
+    // .footer__tel
+
+    &__tel {
+        display: block;
+        line-height: 16px;
+        color: #F2F2F2;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+}

@@ -290,6 +290,7 @@
     &__item {
         background-color: #393f47;
         min-height: 180px;
+        color: #fff;
     }
 }
 .item-grid {
@@ -467,10 +468,13 @@
 
 
 .map {
-
+    background-color: #393f47;
     // .map__container
 
     &__container {
-
+        @media (max-width: 1140px){
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
